@@ -1,0 +1,34 @@
+ {% extends './templates/index.html' %}
+
+{% load static %}
+
+{% block codigoDinamico %} 
+
+{% for autor in object_list %}
+
+<ul>
+    <li>
+        {{autor}}
+
+        <button>
+            <a href="{% url 'Detail' autor.id %}">ver detalles</a>
+        </button> 
+
+        <button>
+            <a href="{% url 'Delete' autor.id %}">Eliminar</a>
+        </button> 
+    
+        <button>
+            <a href="{% url 'Update' autor.id %}">Upadte</a>
+        </button> 
+    
+    </li>
+</ul>
+
+{% endfor %}
+
+<button>
+    <a href="{% url 'Create' %}">Crear NUEVO REGISTRO</a>
+</button>
+
+{% endblock %}

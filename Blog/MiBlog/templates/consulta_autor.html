@@ -1,0 +1,21 @@
+<form action="" method="get"> 
+
+   
+    <p>         AnKay  central de busqueda de manga           </p>
+
+    
+    <input type="text" name="nombre" id="autor">
+  
+    <input type='submit' value='buscar'></button> 
+</form>
+
+{% if  autor %}
+
+   <ul>
+        <li> El escritor {{id.name}} a cargo del POST {{id.name}}   </li>
+   </ul>
+{% endif %}
+
+{% if error %}
+    <p>{{error}}</p>
+{% endif %}

@@ -1,0 +1,19 @@
+<body>
+    
+    {% for post in posts %}
+
+    {{post}}
+
+    <button> 
+        <a href="{% url "eliminar Autor" post.nombre %}">Eliminar Autor</a>
+    </button> 
+    <button> 
+        <a href="{% url "Editar Autor" post.nombre %}">Editar Autor</a>
+    </button> 
+
+    
+    {% endfor %}
+   
+   
+    
+   

@@ -1,0 +1,17 @@
+{% extends './templates/index.html' %}
+
+{% load static %}
+
+{% block codigoDinamico %} 
+
+<form method="Post"> {% csrf_token %}
+
+
+    {{form.as_p}}
+    
+    <input type="submit" value="enviar">
+
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+
+{% extends './templates/index.html' %}
+
+{% load static %}
+
+{% block codigoDinamico %} 
+
+<form method="Post">{% csrf_token %}
+
+    Estas seguro que deseas eliminar el Post {{autor.nombre}}?
+
+
+    <input type="submit" value="eliminar">
+
+</form>
+
+{% endblock %}

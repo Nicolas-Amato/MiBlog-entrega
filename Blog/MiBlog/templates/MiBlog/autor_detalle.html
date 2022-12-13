@@ -1,0 +1,17 @@
+
+
+{% extends './templates/index.html' %}
+
+{% load static %}
+
+{% block codigoDinamico %} 
+
+
+{{autor.nombre}} {{autor.titulo}} {{autor.fecha}} {{autor.post}}
+
+<button>
+    <a href="{% url 'List' %}"> regresar </a>
+</button>
+
+
+{% endblock %}
