@@ -11,4 +11,8 @@ Se encuentra optimizada la edición,eliminación y actualizacion de posts, únic
 
 Entre las funcionalidades principales requeridas en el proyecto, deben aún terminar de arreglarse el agregado de imagenes a los post. y busqueda de los Post
 
+Link video de la Web 
+https://drive.google.com/file/d/1OHchXAlsxzowEL10TgeBpvuxLXKKG5qa/view?usp=share_link
+
+
 Nicolas Amato
